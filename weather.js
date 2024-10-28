@@ -1,4 +1,4 @@
-const apiKey = '99294b680f74aa70b2b1dbae93a2b92c'; // Replace with your actual API key
+const apiKey = '99294b680f74aa70b2b1dbae93a2b92c'; 
 const getWeatherBtn = document.getElementById('getWeather');
 
 getWeatherBtn.addEventListener('click', () => {
@@ -10,7 +10,7 @@ getWeatherBtn.addEventListener('click', () => {
     const weatherInfo = document.getElementById('weatherInfo');
     const errorDiv = document.getElementById('error');
 
-    // Clear previous data and error
+  
     cityName.textContent = '';
     temperature.textContent = '';
     description.textContent = '';
@@ -18,7 +18,7 @@ getWeatherBtn.addEventListener('click', () => {
     errorDiv.style.display = 'none';
     weatherInfo.style.display = 'none';
 
-    // Disable button and show loading state
+   
     getWeatherBtn.disabled = true;
     getWeatherBtn.textContent = 'Loading...';
 
